@@ -28,6 +28,8 @@
 2. >cd "leveldb/build"
 3. >cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
 
+*Note: my working directory is /home/leveldb*
+
 ## How to run the db_bench:
 
 1.	Single benchmark the OSM Dataset:
