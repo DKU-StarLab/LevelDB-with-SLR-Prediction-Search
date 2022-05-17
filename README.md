@@ -1,9 +1,14 @@
 #Important Files:
 
+
 •	do.sh
+
 •	do_margin.sh
+
 •	run.sh
+
 •	runtwitter.sh
+
 
 #Edited Files (The images in ReadMe.docx):
 
