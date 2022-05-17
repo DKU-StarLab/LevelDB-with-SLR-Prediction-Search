@@ -1,0 +1,41 @@
+-- Failed to find LLVM FileCheck
+-- git Version: v1.5.3-7d0d9061
+-- Version: 1.5.3
+-- Performing Test HAVE_STD_REGEX -- success
+-- Performing Test HAVE_GNU_POSIX_REGEX -- failed to compile
+-- Performing Test HAVE_POSIX_REGEX -- success
+-- Performing Test HAVE_STEADY_CLOCK -- success
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/leveldb/leveldb/build
+Scanning dependencies of target leveldb
+[  1%] Building CXX object CMakeFiles/leveldb.dir/db/db_impl.cc.o
+[  2%] Building CXX object CMakeFiles/leveldb.dir/table/block_builder.cc.o
+[  3%] Building CXX object CMakeFiles/leveldb.dir/table/block.cc.o
+[  4%] Building CXX object CMakeFiles/leveldb.dir/table/format.cc.o
+[  5%] Building CXX object CMakeFiles/leveldb.dir/table/table_builder.cc.o
+[  6%] Building CXX object CMakeFiles/leveldb.dir/table/table.cc.o
+[  7%] Building CXX object CMakeFiles/leveldb.dir/table/two_level_iterator.cc.o
+[  8%] Linking CXX static library libleveldb.a
+[ 37%] Built target leveldb
+[ 38%] Linking CXX executable leveldbutil
+[ 39%] Built target leveldbutil
+[ 41%] Built target gtest
+[ 43%] Built target gmock
+[ 44%] Linking CXX executable env_posix_test
+[ 46%] Built target env_posix_test
+[ 48%] Built target gtest_main
+Scanning dependencies of target leveldb_tests
+[ 49%] Building CXX object CMakeFiles/leveldb_tests.dir/table/table_test.cc.o
+[ 50%] Linking CXX executable leveldb_tests
+[ 72%] Built target leveldb_tests
+[ 73%] Linking CXX executable c_test
+[ 75%] Built target c_test
+[ 93%] Built target benchmark
+[ 94%] Linking CXX executable db_bench
+[ 97%] Built target db_bench
+[ 98%] Built target gmock_main
+[100%] Built target benchmark_main
+The size of the array is: 20000
+read:(name)=>(value815734471)
+End Pertama
