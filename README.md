@@ -1,4 +1,4 @@
-#Important Files:
+# Important Files:
 
 
 •	do.sh
@@ -10,7 +10,7 @@
 •	runtwitter.sh
 
 
-#Edited Files (The images in ReadMe.docx):
+# Edited Files (The images in ReadMe.docx):
 
 •	leveldb/benchmarks/db_bench.cc
 •	leveldb/table/block.h
@@ -18,12 +18,12 @@
 •	leveldb/table/block_builder.h
 •	leveldb/table/block_builder.cc
 
-#How to compile levelDB with Segmented Linear Regression
+# How to compile levelDB with Segmented Linear Regression
 1. >git clone this project
 2. >cd "leveldb/build"
 3. >cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
 
-#How to run the db_bench:
+# How to run the db_bench:
 
 1.	Single benchmark the OSM:
 
@@ -42,7 +42,9 @@
 >./do.sh {dataset} {slr}
 
 Example:
+
 >./do.sh osm true
+>
 >./do.sh twitter false
 
 (Edit do.sh to edit the path)
