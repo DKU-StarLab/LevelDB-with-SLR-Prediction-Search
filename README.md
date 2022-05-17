@@ -19,9 +19,9 @@
 •	leveldb/table/block_builder.cc
 
 #How to compile levelDB with Segmented Linear Regression
-1. git clone this project
-2. cd "leveldb/build"
-3. cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
+1. >git clone this project
+2. >cd "leveldb/build"
+3. >cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
 
 #How to run the db_bench:
 
