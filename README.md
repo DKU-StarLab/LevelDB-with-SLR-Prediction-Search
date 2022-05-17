@@ -56,5 +56,5 @@ Example:
 
 Note:
 - Edit do.sh to edit the path.
-- run > chmod +x do.sh
+- If there is permission error, please run >chmod +x do.sh
 
