@@ -24,9 +24,11 @@
 •	leveldb/table/block_builder.cc
 
 ## How to compile levelDB with Segmented Linear Regression
-1. >git clone this project
-2. >cd "leveldb/build"
-3. >cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
+1. >cd /home
+2. >git clone https://github.com/imagesid/levelDB-with-SLR-Prediction-Search.git
+3. >mv levelDB-with-SLR-Prediction-Search leveldb
+4. >cd "leveldb/leveldb/build"
+5. >cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
 
 *Note: My current working directory is /home/leveldb* 
 
@@ -58,3 +60,4 @@ Note:
 - Edit do.sh to edit the path.
 - If there is permission error, please run >chmod +x do.sh
 - If there is bad interpreter error, please run >sed -i -e 's/\r$//' do.sh
+- Make sure you have cmake and g++ installed
