@@ -779,8 +779,8 @@ class Benchmark {
     // options.max_open_files = FLAGS_open_files;
     // options.filter_policy = filter_policy_;
     // options.reuse_logs = FLAGS_reuse_logs;
-    // Status s = DB::Open(options, FLAGS_db, &db_);
-    Status s = DB::Open(options, "/home/leveldb/dbonly/test5", &db_);
+    Status s = DB::Open(options, FLAGS_db, &db_);
+    // Status s = DB::Open(options, "/home/leveldb/dbonly/test5", &db_);
 	std::fprintf(stderr, "Database Path : %s\n", FLAGS_db);
     if (!s.ok()) {
       std::fprintf(stderr, "open error: %s\n", s.ToString().c_str());

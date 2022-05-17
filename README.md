@@ -27,7 +27,8 @@
 1. >cd /home
 2. >git clone https://github.com/imagesid/levelDB-with-SLR-Prediction-Search.git
 3. >mv levelDB-with-SLR-Prediction-Search leveldb
-4. >cd "leveldb/leveldb/build"
+4. >cd "leveldb/leveldb"
+5. >mkdir -p build && cd build
 5. >cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
 
 *Note: My current working directory is /home/leveldb* 
@@ -60,4 +61,5 @@ Note:
 - Edit do.sh to edit the path.
 - If there is permission error, please run >chmod +x do.sh
 - If there is bad interpreter error, please run >sed -i -e 's/\r$//' do.sh
+- You can also change ./do.sh to bash.sh
 - Make sure you have cmake and g++ installed

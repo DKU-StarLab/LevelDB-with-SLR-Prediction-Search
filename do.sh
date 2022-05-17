@@ -20,6 +20,7 @@ fi
 cd /home/leveldb/leveldb/build
 cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
 
+mkdir -p /home/leveldb/dbonly
 rm -rf /home/leveldb/dbonly/test5   
 
 cd /home/leveldb
@@ -27,11 +28,11 @@ cd /home/leveldb
 data=""
 if [ "osm" == "$1" ]; then
 	echo "==> Running OSM ";
-	g++ run.cc -Ileveldb/include -Lleveldb/build -lleveldb -lpthread -o run -g
+	g++ run.cc -Ileveldb/include -Lleveldb/build -lleveldb -lpthread -lsnappy -o run -g
 	./run 
 else
 	echo "==> Running Twitter User Data ";
-	g++ runtwitter.cc -Ileveldb/include -Lleveldb/build -lleveldb -lpthread -o runtwitter -g
+	g++ runtwitter.cc -Ileveldb/include -Lleveldb/build -lleveldb -lpthread -lsnappy -o runtwitter -g
 	./runtwitter 
 	data="twitter"
 fi
