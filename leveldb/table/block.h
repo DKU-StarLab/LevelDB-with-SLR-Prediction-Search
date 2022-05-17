@@ -50,7 +50,7 @@ class Block {
   
   
   int new_meta_size = 32;  // total of meta in block builder (included num_restarts)
-  bool SLR = true;	 	   // set to false to use default binary search           
+  bool SLR = false;	 	   // set to false to use default binary search           
   bool debug = false;      // set to true to show the debug information
     
 };
