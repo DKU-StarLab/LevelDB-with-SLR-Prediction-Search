@@ -57,4 +57,4 @@ Example:
 Note:
 - Edit do.sh to edit the path.
 - If there is permission error, please run >chmod +x do.sh
-
+- If there is bad interpreter error, please run >sed -i -e 's/\r$//' do.sh
