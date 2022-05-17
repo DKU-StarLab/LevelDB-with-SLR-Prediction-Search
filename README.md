@@ -54,4 +54,7 @@ Example:
 >
 >./do.sh twitter false
 
-(Edit do.sh to edit the path)
+Note:
+- Edit do.sh to edit the path.
+- run > chmod +x do.sh
+
