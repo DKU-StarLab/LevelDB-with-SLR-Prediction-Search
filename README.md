@@ -28,7 +28,7 @@
 2. >cd "leveldb/build"
 3. >cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
 
-*Note: my working directory is /home/leveldb*
+*Note: My current working directory is /home/leveldb* 
 
 ## How to run the db_bench:
 
