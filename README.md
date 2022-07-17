@@ -24,9 +24,9 @@
 •	leveldb/table/block_builder.cc
 
 ## Prerequisite
-• Make sure you have cmake installed. No cmake, run this: >sudo apt install cmake
+• Make sure you have cmake installed. No cmake, run this: > sudo apt install cmake
 
-• Make sure you have build-essential installed. No build-essential, run this: >sudo apt install build-essential
+• Make sure you have build-essential installed. No build-essential, run this: > sudo apt install build-essential
 
 
 ## How to compile levelDB with Segmented Linear Regression
