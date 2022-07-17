@@ -30,12 +30,12 @@
 
 
 ## How to compile levelDB with Segmented Linear Regression
-1. >cd /home
-2. >git clone https://github.com/imagesid/levelDB-with-SLR-Prediction-Search.git
-3. >mv levelDB-with-SLR-Prediction-Search leveldb
-4. >cd "leveldb/leveldb"
-5. >mkdir -p build && cd build
-5. >cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
+1. ```cd /home```
+2. ```git clone https://github.com/imagesid/levelDB-with-SLR-Prediction-Search.git``` 
+3. ```mv levelDB-with-SLR-Prediction-Search leveldb```
+4. ```cd "leveldb/leveldb"```
+5. ```mkdir -p build && cd build```
+5. ```cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .```
 
 *Note: My current working directory is /home/leveldb* 
 
@@ -43,31 +43,31 @@
 
 1.	Single benchmark the OSM Dataset:
 
->./db_bench --benchmarks="readseqslr" --histogram=1  --use_existing_db=1 --db=/home/leveldb/dbonly/test5
+```./db_bench --benchmarks="readseqslr" --histogram=1  --use_existing_db=1 --db=/home/leveldb/dbonly/test5```
 2.	Multiple benchmarks the OSM Dataset:
 
->./db_bench --benchmarks="readseqslr, readseqslr , readseqslr , readseqslr , readseqslr " --histogram=1  --use_existing_db=1 --db=/home/leveldb/dbonly/test5
+```./db_bench --benchmarks="readseqslr, readseqslr , readseqslr , readseqslr , readseqslr " --histogram=1  --use_existing_db=1 --db=/home/leveldb/dbonly/test5```
 3.	Single benchmark the Twitter User Dataset:
 
->./db_bench --benchmarks="readseqslrtwitter" --histogram=1  --use_existing_db=1 --db=/home/leveldb/dbonly/test5
+```./db_bench --benchmarks="readseqslrtwitter" --histogram=1  --use_existing_db=1 --db=/home/leveldb/dbonly/test5```
 4.	Multiple benchmarks the Twitter User Dataset:
 
->./db_bench --benchmarks=" readseqslrtwitter, readseqslrtwitter, readseqslrtwitter, readseqslrtwitter, readseqslrtwitter " --histogram=1  --use_existing_db=1 --db=/home/leveldb/dbonly/test5
+```./db_bench --benchmarks=" readseqslrtwitter, readseqslrtwitter, readseqslrtwitter, readseqslrtwitter, readseqslrtwitter " --histogram=1  --use_existing_db=1 --db=/home/leveldb/dbonly/test5```
 5.	Build, compile the scripts and run db_bench in one command:
 
->./do.sh {dataset} {slr}
+```./do.sh {dataset} {slr}```
 
 Example:
 
->./do.sh osm true
->
->./do.sh twitter false
+```./do.sh osm true```
+
+```./do.sh twitter false```
 
 Note:
 - Edit do.sh to edit the path.
-- If there is permission error, please run >chmod +x do.sh
-- If there is bad interpreter error, please run >sed -i -e 's/\r$//' do.sh
-- You can also change ./do.sh to bash.sh
+- If there is permission error, please run ```chmod +x do.sh```
+- If there is bad interpreter error, please run ```sed -i -e 's/\r$//' do.sh```
+- You can also change ```./do.sh``` to ```bash.sh```
 - Make sure you have cmake and g++ installed
 
 
