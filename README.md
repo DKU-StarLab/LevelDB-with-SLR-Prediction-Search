@@ -23,6 +23,12 @@
 
 •	leveldb/table/block_builder.cc
 
+## Prerequisite
+• Make sure you have cmake installed. No cmake, run this: >sudo apt install cmake
+
+• Make sure you have build-essential installed. No build-essential, run this: >sudo apt install build-essential
+
+
 ## How to compile levelDB with Segmented Linear Regression
 1. >cd /home
 2. >git clone https://github.com/imagesid/levelDB-with-SLR-Prediction-Search.git
@@ -63,3 +69,5 @@ Note:
 - If there is bad interpreter error, please run >sed -i -e 's/\r$//' do.sh
 - You can also change ./do.sh to bash.sh
 - Make sure you have cmake and g++ installed
+
+
