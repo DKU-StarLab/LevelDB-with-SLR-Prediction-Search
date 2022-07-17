@@ -44,15 +44,19 @@
 1.	Single benchmark the OSM Dataset:
 
 ```./db_bench --benchmarks="readseqslr" --histogram=1  --use_existing_db=1 --db=/home/leveldb/dbonly/test5```
+
 2.	Multiple benchmarks the OSM Dataset:
 
 ```./db_bench --benchmarks="readseqslr, readseqslr , readseqslr , readseqslr , readseqslr " --histogram=1  --use_existing_db=1 --db=/home/leveldb/dbonly/test5```
+
 3.	Single benchmark the Twitter User Dataset:
 
 ```./db_bench --benchmarks="readseqslrtwitter" --histogram=1  --use_existing_db=1 --db=/home/leveldb/dbonly/test5```
+
 4.	Multiple benchmarks the Twitter User Dataset:
 
 ```./db_bench --benchmarks=" readseqslrtwitter, readseqslrtwitter, readseqslrtwitter, readseqslrtwitter, readseqslrtwitter " --histogram=1  --use_existing_db=1 --db=/home/leveldb/dbonly/test5```
+
 5.	Build, compile the scripts and run db_bench in one command:
 
 ```./do.sh {dataset} {slr}```
